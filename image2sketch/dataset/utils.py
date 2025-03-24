@@ -1,8 +1,10 @@
-import pandas as pd
+import os
+import cv2
 import time
 import json
 import glob
-import os
+import argparse
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -11,14 +13,9 @@ from PIL import Image
 from IPython.display import clear_output, display
 
 import torch
-import torchfile
 from torchvision import transforms
 from torchvision.utils import save_image
 from torch.utils.serialization import load_lua
-
-from PIL import Image
-import argparse
-import cv2
 
 
 def make_gray_img(img_paths):
@@ -53,9 +50,6 @@ def make_gray_img(img_paths):
             print("Saved image to: ./gray/{}.jpg".format(name)) 
 
     return final_img
-
-
-# In[ ]:
 
 
 def make_pencil_img(gray_img_paths,model):
@@ -112,6 +106,11 @@ def make_pencil_img(gray_img_paths,model):
             print("Saved image to: ./sketch/{}.jpg".format(name)) 
 
 
+def simplify(img_paths,model):
+    make_gray_img(img_paths)
+    gray_img_paths = glob.glob('./gray/*.jpg')  # 저장된 gray 이미지 경로 업데이트
+    make_pencil_img(gray_img_paths, model)
+    
 
 import hashlib
 import os
