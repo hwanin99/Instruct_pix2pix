@@ -1,5 +1,5 @@
 # <p align = "center">Instruct Pix2Pix </p>  
-<p align = "center"><img src="https://github.com/user-attachments/assets/47cd3eb1-2625-47a3-bb01-a81e6277d90d" width="1000" height="250"></p>
+<p align = "center"><img src="https://github.com/user-attachments/assets/0b203565-369f-40e5-9487-57dc2e253b42" width="1000" height="245"></p>
 
 > 1. RGB 이미지를 스케치 형태의 이미지로 변환  
 > (1) CV2를 사용해 이미지를 RGB -> Gray로 변환  
@@ -9,8 +9,8 @@
 > 2. RGB 이미지에서 caption을 생성  
 > (1) CLIP + BLIP으로 이미지에 대한 caption을 생성  
 > (2) ChatGPT를 사용해 생성된 caption을 정제
----
-<p align = "center"><img src="https://github.com/user-attachments/assets/02677b1b-9ef9-41b0-84c4-31e1277d958a" width="800" height="260"></p>
 
-> * 1번과 2번으로 만들어진 결과를 아래와 같이 Instruct Pix2Pix에 들어갈 데이터셋으로 구성
->   * Dataset{1번: Original Image, 2번: Edit Prompt, RGB 이미지: Edited Image}
+> * Dataset{1번: Original Image, 2번: Edit Prompt, RGB 이미지: Edited Image}
+---
+## <p align = "center">Result </p>  
+<p align = "center"><img src="https://github.com/user-attachments/assets/997101c4-a6ff-4004-b17d-85bab10e96e4" width="800" height="260"></p>
