@@ -1,5 +1,5 @@
 # <p align = "center">Instruct Pix2Pix </p>  
-<p align = "center"><img src="https://github.com/user-attachments/assets/0b203565-369f-40e5-9487-57dc2e253b42" width="900" height="220"></p>
+<p align = "center"><img src="https://github.com/user-attachments/assets/0b203565-369f-40e5-9487-57dc2e253b42" width="1000" height="230"></p>
 
 > 1. RGB 이미지를 스케치 형태의 이미지로 변환  
 > (1) CV2를 사용해 이미지를 RGB -> Gray로 변환  
