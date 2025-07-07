@@ -13,9 +13,4 @@
 > * Dataset{1번: Original Image, 2번: Edit Prompt, RGB 이미지: Edited Image}
 ---
 ## <p align = "center">Result </p>  
-import torch
-import gradio as gr
-
-from diffusers import StableDiffusionInstructPix2PixPipeline
-from diffusers.utils import load_image
 <p align = "center"><img src="https://github.com/user-attachments/assets/997101c4-a6ff-4004-b17d-85bab10e96e4" width="800" height="260"></p>
